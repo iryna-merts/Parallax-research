@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width-device-width, initial-scale-1.0">
+    <meta http-equiv="X-UA-Compatible" content="le-edge">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="hero-image"></div>
+    <div class="rellax parallax-el" data-rellax-speed="4"></div>
+    <div class="rellax clouds" data-rellax-speed="10"></div>
+    <div class="rellax text" data-rellax-speed="6"></div>
+    
+
+    <div class="whitespace"></div>
+    <div class="rellax content" data-rellax-speed="10">
+        <dic class="row content-container">
+            <div class="col-md-3 text-container">
+                <h4>Обираєш, куди поїхати?</h4>
+                <p>Україна - багата на неймовірні локації держава. Деякі з них маловідомі та малодоступні. Інші - популярні та завжди поруч. Гори чи місто, водоспад чи центральна площа, стежки лісу чи вулички міста - ти завжди маєш велике різноманіття місць, які можна відвідати. Варто лише ввести у пошуковику, яка тобі до вподоби, та вирушити туди. Все просто. Вдалих мандрів! </p>
+                <a href="#" class="btn explore-btn">Більше натхнення</a>
+            </div>
+            <div class="col-md-9 img-container">
+                <div class="row">
+                    <div class="col-md-4 img-small">
+                        <img src="img-left.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img-mid.jpg" alt="">
+                    </div>
+                    <div class="col-md-4 img-small">
+                        <img src="img-right.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </dic>
+    </div>
+
+
+    <script src="rellax.min.js"></script>
+    <script type="text/javascript">
+        var rellax = new Rellax('.rellax');
+    
+    </script>
+
+</body>
+</html>
