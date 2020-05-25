@@ -1,0 +1,28 @@
+<html class="no-js" lang="en">
+    <head>
+       <title>Mousemove Parallax</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="bg">
+                <img src="sea-view-4.jpg" class="layer" data-speed="-2">
+            </div>
+            <img src="explore.png" class="layer" data-speed="-4">
+            <img src="world.png" class="layer" data-speed="4">
+            <img src="me.png" class="layer girl" data-speed="2">
+        </section>
+        <script>
+            document.addEventListener('mousemove', parallax);
+            function parallax(e){
+                this.querySelectorAll('.layer').forEach(layer => {
+                    var speed = layer.getAttribute('data-speed')
+                    var x = (window.innerWidth - e.pageX*speed)/100
+                    var y = (window.innerWidth - e.pageY*speed)/100
+                    layer.style.transform=`translateX(${x}px)
+                    translateY(${y}px)`
+                } )
+            }
+        </script>
+    </body>
+</html>
